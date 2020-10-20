@@ -1,0 +1,42 @@
+{
+	"fileName": "id_1603178630847_100_addXML",
+	"fileType": "change",
+	"changeType": "addXML",
+	"moduleName": "",
+	"reference": "customer.ztrai.jhr.adaptation.template.training2",
+	"packageName": "$TMP",
+	"content": {
+		"fragmentPath": "fragments/CustomFilter.fragment.xml",
+		"targetAggregation": "controlConfiguration",
+		"index": 0
+	},
+	"selector": {
+		"id": "mdm.cmd.supplier.ops1::sap.suite.ui.generic.template.ListReport.view.ListReport::C_SupplierFs--listReportFilter",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/mdm.cmd.supplier.ops1/appVariants/customer.ztrai.jhr.adaptation.template.training2/changes/",
+	"projectId": "customer.ztrai.jhr.adaptation.template.training2",
+	"creation": "2020-10-20T07:32:23.832Z",
+	"originalLanguage": "DE",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.71.22",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "6.0.2",
+		"from": "6.0.2"
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

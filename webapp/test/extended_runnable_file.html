@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<!-- IMPORTANT
+			This HTML file is meant for testing the application/component standalone, outside the Unified Shell.
+			Some integration functionality, personalization etc. will not be available when running standalone.
+	-->
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+<script id="sap-ui-script-placeholder"></script>
+
+<!-- this is loaded to enable ushell services -->
+<script src="../../test-resources/sap/ushell/bootstrap/sandbox.js" id="sap-ushell-bootstrap"></script>
+<script id="sap-ui-bootstrap" src="./../resources/sap-ui-core.js" data-sap-ui-libs="sap.m, sap.ushell, sap.me, sap.ui.table, sap.ui.layout, sap.ui.rta, sap.ui.dt, sap.viz, sap.ui.fl, sap.ui.comp, sap.suite.ui.generic.template" data-sap-ui-theme="sap_belize" data-sap-ui-xx-bindingsyntax="complex" data-sap-ui-compatversion="edge">
+</script>
+	<script src="https://webidecp-z9ovc9lxxi.dispatcher.hana.ondemand.com/uiadaptationstable_sapwebide/client/v1.0.97_1602506785190/src/uiadaptation/util/AppVariantPreviewHelper.js"></script>
+
+	<script src="https://webidecp-z9ovc9lxxi.dispatcher.hana.ondemand.com/uiadaptationstable_sapwebide/client/v1.0.97_1602506785190/src/adaptationproject/util/LoadChangesLrepPreview.js"></script>
+
+	<script>(function(){document.addEventListener('load', function(event){
+        	var element = event.target;
+            if( element.id === "OpaFrame"){
+               var opaFrameElementDocument = document.getElementById("OpaFrame").contentWindow.document;
+               var scriptObject = opaFrameElementDocument.createElement("script");
+               scriptObject.type = "text/javascript";
+               scriptObject.innerHTML = "sap.ui.getCore().loadLibrary('sap.ui.fl'); jQuery.getScript('https://webidecp-z9ovc9lxxi.dispatcher.hana.ondemand.com/uiadaptationstable_sapwebide/client/v1.0.97_1602506785190/src/adaptationproject/util/LoadChangesLrepPreview.js')";
+               opaFrameElementDocument.head.appendChild(scriptObject);
+            }
+          },true);})()</script>
+
+	<script>window['manifest'] = {"customer.ztrai.jhr.adaptation.template.training2":{ "name": "mdm.cmd.supplier.ops1", "url": "/sap/bc/ui5_ui5/sap/md_supplierss1/~DDBA8111F7195185C4F0E37E40FE0CCA~5", "manifest":{ "_version": "1.7.0", "sap.app":{ "_version": "1.1.0", "id": "customer.ztrai.jhr.adaptation.template.training2", "type": "application", "i18n": "i18n/i18n.properties", "applicationVersion":{ "version": "6.0.2" }, "title": "Adaptation Project 2", "description": "Lieferant", "tags":{ "keywords":[] }, "ach": "LO-MD-BP", "dataSources":{ "mainService":{ "uri": "/sap/opu/odata/sap/C_SUPPLIER_FS_SRV/", "type": "OData", "settings":{ "annotations":[ "C_SUPPLIER_FS_ANNO_MDL", "localAnnotations" ], "localUri": "localService/metadata.xml" } }, "C_SUPPLIER_FS_ANNO_MDL":{ "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='C_SUPPLIER_FS_ANNO_MDL',Version='0001')/$value/", "type": "ODataAnnotation", "settings":{ "localUri": "localService/C_SUPPLIER_FS_ANNO_MDL.xml" } }, "localAnnotations":{ "uri": "annotations/annotations.xml", "type": "ODataAnnotation", "settings":{ "localUri": "annotations/annotations.xml" } } }, "offline":false, "resources": "resources.json", "sourceTemplate":{ "id": "ui5template.smarttemplate", "version": "1.0.0" } }, "sap.ui":{ "_version": "1.1.0", "technology": "UI5", "icons":{ "icon": "", "favIcon": "", "phone": "", "phone@2": "", "tablet": "", "tablet@2": "" }, "deviceTypes":{ "desktop":true, "tablet":true, "phone":true }, "supportedThemes":[ "sap_hcb", "sap_bluecrystal" ] }, "sap.ui5":{ "_version": "1.1.0", "resources":{ "js":[], "css":[{ "uri": "css/app.css" } ] }, "dependencies":{ "minUI5Version": "1.56.3", "libs":{ "sap.ui.core":{ "lazy":false }, "sap.m":{ "lazy":false }, "sap.ui.comp":{ "lazy":false }, "sap.uxap":{ "lazy":false }, "sap.suite.ui.generic.template":{ "lazy":false }, "sap.ui.generic.app":{ "lazy":false }, "sap.ui.layout":{ "lazy":false }, "sap.viz":{ "lazy":false } }, "components":{} }, "models":{ "i18n":{ "preload":false, "type": "sap.ui.model.resource.ResourceModel", "uri": "i18n/i18n.properties" }, "@i18n":{ "preload":false, "type": "sap.ui.model.resource.ResourceModel", "uri": "i18n/i18n.properties" }, "i18n|sap.suite.ui.generic.template.ListReport|C_SupplierFs":{ "preload":false, "type": "sap.ui.model.resource.ResourceModel", "uri": "i18n/ListReport/C_SupplierFs/i18n.properties", "settings":{ "enhanceWith":[{ "bundleUrl": "i18n/ListReport/C_SupplierFs/i18n.properties", "bundleUrlRelativeTo": "manifest" } ] } }, "i18n|sap.suite.ui.generic.template.ObjectPage|C_SupplierFs":{ "preload":false, "type": "sap.ui.model.resource.ResourceModel", "uri": "i18n/ObjectPage/C_SupplierFs/i18n.properties", "settings":{ "enhanceWith":[{ "bundleUrl": "i18n/ObjectPage/C_SupplierFs/i18n.properties", "bundleUrlRelativeTo": "manifest" } ] } }, "":{ "preload":true, "dataSource": "mainService", "settings":{ "defaultBindingMode": "TwoWay", "defaultCountMode": "Inline", "refreshAfterChange":false } } }, "extends":{ "extensions":{ "sap.ui.viewExtensions":{ "sap.suite.ui.generic.template.ObjectPage.view.Details":{ "ReplaceFacet|C_SupplierFs|PurchaseRequisitionItemTypes":{ "className": "sap.ui.core.mvc.View", "viewName": "mdm.cmd.supplier.ops1.ext.view.RequisitionItemTypes", "type": "XML", "sap.ui.generic.app":{ "title": "Bestellanforderungspositionsarten", "enableLazyLoading":true } }, "ReplaceFacet|C_SupplierFs|PurchaseContractSpend":{ "className": "sap.ui.core.mvc.View", "viewName": "mdm.cmd.supplier.ops1.ext.view.ContractSpend", "type": "XML", "sap.ui.generic.app":{ "title": "" } }, "ReplaceFacet|C_SupplierFs|PurchasingSpend":{ "className": "sap.ui.core.mvc.View", "viewName": "mdm.cmd.supplier.ops1.ext.view.PurchasingSpend", "type": "XML", "sap.ui.generic.app":{ "title": "Bestellanforderungspositionsarten", "enableLazyLoading":true } }, "ReplaceFacet|C_SupplierFs|SupplierEvaluation":{ "className": "sap.ui.core.mvc.View", "viewName": "mdm.cmd.supplier.ops1.ext.view.SupplierEvaluation", "type": "XML", "sap.ui.generic.app":{ "title": "Lieferant", "enableLazyLoading":true } } } } } }, "contentDensities":{ "compact":true, "cozy":true }, "componentName": "mdm.cmd.supplier.ops1", "appVariantId": "customer.ztrai.jhr.adaptation.template.training2", "appVariantIdHierarchy":[{ "appVariantId": "mdm.cmd.supplier.ops1.Component", "layer": "VENDOR", "version": "6.0.2" } ] }, "sap.ui.generic.app":{ "_version": "1.1.0", "pages":[{ "entitySet": "C_SupplierFs", "component":{ "name": "sap.suite.ui.generic.template.ListReport", "list":true }, "pages":[{ "entitySet": "C_SupplierFs", "component":{ "name": "sap.suite.ui.generic.template.ObjectPage", "settings":{ "showRelatedApps":true } } } ] } ] }, "sap.platform.abap":{ "_version": "1.1.0", "uri": "/sap/bc/ui5_ui5/sap/md_supplierss1" }, "sap.platform.hcp":{ "_version": "1.1.0", "uri": "" }, "sap.fiori":{ "_version": "1.1.0", "registrationIds":[ "F0354" ], "archeType": "transactional" } }, "self":{ "name": "mdm.cmd.supplier.ops1", "url": "/sap/bc/ui5_ui5/sap/md_supplierss1/~DDBA8111F7195185C4F0E37E40FE0CCA~5" }, "asyncHints":{ "libs":[{ "name": "sap.viz" },{ "name": "sap.ui.core" },{ "name": "sap.ui.layout" },{ "name": "sap.ui.generic.app" },{ "name": "sap.m" },{ "name": "sap.ui.unified", "lazy":true },{ "name": "sap.ui.comp" },{ "name": "sap.suite.ui.microchart", "lazy":true },{ "name": "sap.chart", "lazy":true },{ "name": "sap.ui.table", "lazy":true },{ "name": "sap.ui.fl" },{ "name": "sap.suite.ui.generic.template" },{ "name": "sap.f" },{ "name": "sap.uxap" },{ "name": "sap.ushell" } ], "requests":[{ "name": "sap.ui.fl.changes", "url": "/sap/bc/lrep/flex/data/~zXWR0f4TeGcLWkFyRFjyLBT55dM=~/customer.ztrai.jhr.adaptation.template.training2", "reference": "customer.ztrai.jhr.adaptation.template.training2", "cachebusterToken": "zXWR0f4TeGcLWkFyRFjyLBT55dM=" } ] } }}</script>
+
+<!-- Change loading will be injected -->
+<script>
+    document.title = "Adaptation Project 2";
+	//Application launch configuration
+	sap.ui.getCore().attachInitEvent(function() {
+			var sVariantID = "customer.ztrai.jhr.adaptation.template.training2", sLayer = "CUSTOMER_BASE", oComponent, oComponentConfig, sComponentName = "mdm.cmd.supplier.ops1", oMergedManifest = window['manifest'];
+		    if(window['manifest']){
+				//if MergedDescriptor is available from app previre service
+				console.log("App variant running on merged manifest from backend.");
+				appVariantPreview.mergedDescriptorAppPreview(oMergedManifest, sVariantID, sLayer).then(function(oShell){
+					oShell.placeAt("content");
+				});
+			}else{
+				//fallback mechanism
+				console.log("Merged descriptor could not be fetched from backend, falling back to non-merged execution");
+				appVariantPreview.fallbackAppVariantPreview(sComponentName, sVariantID, sLayer, window["isInternal"]).then(function(oShell){
+					oShell.placeAt("content");
+				});
+			}
+		});
+</script>
+</head>
+
+<!-- UI Content -->
+<body class="sapUiBody" id="content" role="application">
+</body>
+
+</html>

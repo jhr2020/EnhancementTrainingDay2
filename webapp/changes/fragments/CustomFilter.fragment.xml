@@ -1,0 +1,14 @@
+<!-- Use stable and unique id's!-->
+<core:FragmentDefinition xmlns="sap.m"
+		xmlns:smartfilterbar="sap.ui.comp.smartfilterbar"
+		xmlns:core="sap.ui.core">
+	<smartfilterbar:ControlConfiguration id="boxFilter" key="CustomBoxFilter" index="3"
+		label="{i18n>interestingCountry}" visibleInAdvancedArea="true" groupId="_BASIC">
+		<smartfilterbar:customControl>
+			<ComboBox id="CustomFilter">
+				<core:Item id="CustomPhoneFilterItem0" key="off" text="{i18n>off}"/>
+				<core:Item id="CustomPhoneFilterItem1" key="on" text="{i18n>on}"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+</core:FragmentDefinition>

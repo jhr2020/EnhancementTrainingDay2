@@ -1,0 +1,39 @@
+{
+	"fileName": "id_1603178652763_101_codeExt",
+	"fileType": "change",
+	"changeType": "codeExt",
+	"moduleName": "",
+	"reference": "customer.ztrai.jhr.adaptation.template.training2",
+	"packageName": "$TMP",
+	"content": {
+		"codeRef": "coding/CustomExtension.js"
+	},
+	"selector": {
+		"controllerName": "sap.suite.ui.generic.template.ListReport.view.ListReport"
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/mdm.cmd.supplier.ops1/appVariants/customer.ztrai.jhr.adaptation.template.training2/changes/",
+	"projectId": "customer.ztrai.jhr.adaptation.template.training2",
+	"creation": "2020-10-20T07:24:13.057Z",
+	"originalLanguage": "DE",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.71.22",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "6.0.2",
+		"from": "6.0.2"
+	},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}
